@@ -1,0 +1,208 @@
+
+/* corps de page */
+body
+{
+    margin: 0px;
+    padding: 0px;
+}
+.bloc_page
+{
+    margin: 25px;
+    padding: 5px;
+}
+/* header */
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Navigation */
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+
+nav a
+{
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #0065FC;
+    border-bottom: 3px solid #0065FC;
+}
+/*partie recherche*/
+.recherche
+{
+    display: flex;
+    flex-flow: column;
+    
+}
+.searchbox
+{
+    margin-bottom: 5px;
+
+}
+button
+{
+    background-color: white;
+    border-radius: 15% / 55%;
+    color: #0065FC;
+}
+.icolor i
+{
+    color: #0065FC;
+
+}
+.filtre
+{
+    display: flex;
+}
+.filtre ul
+{
+    display: flex;
+    list-style-type: none;
+    padding: 0px;
+}
+.filtre i
+{
+    background-color: #DEEBFF;
+    color: #0065FC;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+
+}
+.filtre li
+{
+    margin-left: 10px;    
+}
+.filtre a
+{
+    text-decoration: none;
+    color: #181818;
+    padding-bottom: 3px;
+}
+.filtre a:hover
+{
+    color: #0065FC;
+    border-bottom: 3px solid#0065FC;
+}
+/*Section hebergements*/
+
+
+.mars 
+{
+    display: flex;
+    flex-flow: wrap;
+    
+    background-color:#DEEBFF;
+    width: 70%;
+    
+}
+.mars i
+{
+    color: #0065FC;
+    font-size: 10px;
+    
+}
+.top 
+{
+    display: flex;
+    margin: auto;
+    height: 300px ;
+    width: 1000px;
+    background-color: tomato;
+    
+}
+.bottom
+{
+    display: flex;
+    margin: auto;
+    height: 300px ;
+    width: 1000px;
+    background-color: rgb(129, 77, 131);
+}
+.m1
+{
+    display: block;
+    margin: auto;
+    
+    background-color: white;
+    border-radius: 6px 6px 6px 6px;
+    width: 260px;
+    height: 200px;
+    
+}
+.m1 img
+{
+    display: flex;
+    margin-top : 4px;
+    margin-left: 4px;
+    width: 250px;
+    height: 120px;
+    border-radius: 6px 6px 0px 0px;
+    border: 1px solid white ;
+    
+}
+.m1 p
+{
+    margin-left: 4px;
+}
+
+
+/* section les plus populaires */
+.hebergements
+{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.popular
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    background-color:#DEEBFF;
+    width: 25%;
+}
+.popular i
+{
+    color: #0065FC;
+    font-size: 10px;
+    
+}
+.pop1
+{
+    display: flex;
+    margin: auto;
+    
+    background-color: white;
+    border-radius: 6px 6px 6px 6px;
+    width: 320px;
+    height: 130px;
+    
+}
+.pop1 img
+{
+    display: flex;
+    margin-top : 4px;
+    margin-left: 4px;
+    width: 120px;
+    height: 120px;
+    border-radius: 6px 6px 0px 0px;
+    border: 1px solid white ;
+    
+}
