@@ -100,7 +100,12 @@ button
     border-bottom: 3px solid#0065FC;
 }
 /*Section hebergements*/
-
+.hebergements
+{
+    display: flex;
+    justify-content: space-between;
+    
+}
 
 .mars 
 {
@@ -163,12 +168,7 @@ button
 
 
 /* section les plus populaires */
-.hebergements
-{
-    display: flex;
-    justify-content: space-between;
-    
-}
+
 .popular
 {
     display: flex;
