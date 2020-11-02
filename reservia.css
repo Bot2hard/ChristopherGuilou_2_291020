@@ -10,39 +10,34 @@ body
     margin: 25px;
     padding: 5px;
 }
-/* header */
-header
+/* SECTION ENTETE */
+.entete
 {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
-
-/* Navigation */
-nav ul
+.navig1 ul
 {
-    list-style-type: none;
     display: flex;
+    list-style-type: none;
 }
-
-nav li
+.navig1 li
 {
     margin-right: 15px;
 }
-
-nav a
+.navig1 a
 {
     color: #181818;
     padding-bottom: 3px;
     text-decoration: none;
 }
-
 nav a:hover
 {
     color: #0065FC;
     border-bottom: 3px solid #0065FC;
 }
-/*partie recherche*/
+/* SECTION RECHERCHES ET FILTRES */
 .recherche
 {
     display: flex;
@@ -99,46 +94,44 @@ button
     color: #0065FC;
     border-bottom: 3px solid#0065FC;
 }
-/*Section hebergements*/
-.hebergements
+/* SECTION HEBERGEMENTS A MARSEILLE */ 
+.hebpop
 {
     display: flex;
     justify-content: space-between;
     
 }
 
-.mars 
+.hebergements
 {
     display: flex;
-    flex-flow: wrap;
-    
+    flex-flow: column wrap;
+    align-items: baseline;
     background-color:#DEEBFF;
     width: 70%;
-    
 }
-.mars i
+.hebergements i
 {
     color: #0065FC;
     font-size: 10px;
-    
 }
 .top 
-{
-    display: flex;
-    margin: auto;
-    height: 300px ;
-    width: 1000px;
-    background-color: tomato;
+    {
+        display: flex;
+        margin: auto;
+        height: 300px ;
+        width: 1000px;
     
-}
+        
+    }
 .bottom
-{
-    display: flex;
-    margin: auto;
-    height: 300px ;
-    width: 1000px;
-    background-color: rgb(129, 77, 131);
-}
+    {
+        display: flex;
+        margin: auto;
+        height: 300px ;
+        width: 1000px;
+    
+    }
 .m1
 {
     display: block;
@@ -150,9 +143,8 @@ button
     height: 200px;
     
 }
-.m1 img
+.m1 img 
 {
-    display: flex;
     margin-top : 4px;
     margin-left: 4px;
     width: 250px;
@@ -165,25 +157,27 @@ button
 {
     margin-left: 4px;
 }
-
-
-/* section les plus populaires */
-
+/* SECTION LES PLUS POPULAIRES*/
+.tetpop
+{
+    display: flex;
+    justify-content: space-around;
+}
 .popular
 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     
-    background-color:#DEEBFF;
+    background-color: #DEEBFF;
     width: 25%;
 }
-.popular i
+.pop1 i
 {
     color: #0065FC;
-    font-size: 10px;
-    
+    font-size: 10px;    
 }
+
 .pop1
 {
     display: flex;
@@ -205,4 +199,117 @@ button
     border-radius: 6px 6px 0px 0px;
     border: 1px solid white ;
     
+}
+/* PARTIE ACTIVITES A MARSEILLE*/
+.Activités
+{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: flex-start;
+    
+    
+
+}
+.titleact
+{
+    display: inline;
+    position: relative;
+    width: 100%;
+}
+.left
+{
+    display: flex;
+    flex-flow: wrap;
+    
+    width: 50%;
+
+}
+.pic
+{
+    display: flex;
+    flex-flow: column;
+}
+.right
+{
+    display: flex;
+    flex-flow: wrap;
+    
+    
+    
+    width: 50%;
+
+}
+
+.act1
+{
+    display: block;
+    
+    
+    
+    background-color: white;
+    border-radius: 6px 6px 6px 6px;
+    width: 260px;
+    height: 430px;
+    
+}
+.act1 img
+{
+    width: 250px;
+    height: 400px;
+    border-radius: 6px 6px 0px 0px;
+    border: 1px solid white ;
+}
+.act2
+{
+    display: flex;
+    flex-flow: wrap;
+    
+    
+    background-color: white;
+    border-radius: 6px 6px 6px 6px;
+    width: 260px;
+    height: 250px;
+}
+.act2 img
+{
+
+    width: 250px;
+    height: 220px;
+    border-radius: 6px 6px 0px 0px;
+    border: 1px solid white ;
+}
+.act3
+{
+    display: flex;
+    flex-flow: wrap;
+    
+    
+    background-color: white;
+    border-radius: 6px 6px 6px 6px;
+    width: 260px;
+    height: 150px;
+}
+.act3 img
+{
+
+    width: 250px;
+    height: 120px;
+    border-radius: 6px 6px 0px 0px;
+    border: 1px solid white ;
+}
+footer
+{
+    display: flex;
+    
+    justify-content: space-around;
+    
+    background-color: #DEEBFF;
+}
+footer ul
+{
+    list-style-type: none;
+}
+.foot
+{
+    width: 25%;
 }
