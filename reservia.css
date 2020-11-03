@@ -1,4 +1,11 @@
-
+@font-face {
+	font-family             : 'Raleway';
+	src                     : url('Raleway.ttf');
+}
+*
+{
+	font-family             : 'Raleway';
+}
 /* corps de page */
 body
 {
@@ -7,8 +14,8 @@ body
 }
 .bloc_page
 {
-    margin: 25px;
-    padding: 5px;
+    margin: 10px 200px 10px 200px ;
+    padding: 0px;
 }
 /* SECTION ENTETE */
 .entete
@@ -19,8 +26,8 @@ body
 }
 .navig1 ul
 {
-    display: flex;
-    list-style-type: none;
+    display: flex; /* permet aux elements de l'UL de s'aligner*/
+    list-style-type: none;/* eleveve les points de ma listes a puces */
 }
 .navig1 li
 {
@@ -29,25 +36,69 @@ body
 .navig1 a
 {
     color: #181818;
-    padding-bottom: 3px;
-    text-decoration: none;
+    
+    padding: 23px 0px 3px 0px ;
+    text-decoration: none;/* enleve la deco des liens*/
 }
 nav a:hover
 {
     color: #0065FC;
-    border-bottom: 3px solid #0065FC;
+    
+    border-top: 3px solid #0065FC;
 }
 /* SECTION RECHERCHES ET FILTRES */
+.barre2rech
+{
+    display: inline-flex;
+    max-width: 100%;
+    overflow: auto;
+}
+
+.barre2rechicon 
+{
+    background-color: #F2F2F2;
+    padding: 1rem 1.25rem; /* permet de determiner la marge interne du bouton*/
+    border-radius: 1rem 0 0 1rem;/* permet d'arrondir les angles de la bordure*/
+    text-align: center;
+}
+
+.barre2rechicon2
+{
+    margin-left: 0.1rem; /* ajuste la marge gauche de l'icone pour la centrer */
+}
+
+.barre2rechinput /* mise en forme de la partie input 'texte a rentrer pour la recherche' */
+{
+    border-right: none;/* efface bordure gauche et droite */ 
+    border-left: none;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+    width: 14rem;
+}
+.barre2rechinput::placeholder /* couleur du texte pré rentré dans le champs */
+{
+    color: #00000069;
+}
+
+.barre2rechclic /* mise en forme de la partie clic pour valider le champs entré*/
+{
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    border: none; /* sans bordure*/
+    border-radius: 0 1rem 1rem 0; 
+    padding: 0 1.5rem; 
+}
 .recherche
 {
     display: flex;
     flex-flow: column;
-    
 }
 .searchbox
 {
     margin-bottom: 5px;
-
 }
 button
 {
@@ -98,49 +149,53 @@ button
 .hebpop
 {
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
 }
-
+.titleheb
+{
+    display: flex;
+    position: relative;
+    width: 50%;
+    margin-left: 25px;
+}
+.affich
+{
+    display: flex;
+    position: relative;
+    width: 50%;
+    margin-left: 25px;
+    margin-bottom: 35px;
+}
 .hebergements
 {
     display: flex;
-    flex-flow: column wrap;
-    align-items: baseline;
-    background-color:#DEEBFF;
-    width: 70%;
+    flex-flow: column;
+    background-color: #F2F2F2;
+    border-radius: 6px 6px 6px 6px;
+    width: 67%;
 }
 .hebergements i
 {
     color: #0065FC;
     font-size: 10px;
 }
-.top 
-    {
-        display: flex;
-        margin: auto;
-        height: 300px ;
-        width: 1000px;
-    
-        
-    }
-.bottom
-    {
-        display: flex;
-        margin: auto;
-        height: 300px ;
-        width: 1000px;
-    
-    }
+.top, .bottom
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 25px 5px 25px;
+    height: 300px ;
+    width: 900px;
+}
 .m1
 {
-    display: block;
-    margin: auto;
-    
+    display: flex;
+    flex-flow: column;
     background-color: white;
     border-radius: 6px 6px 6px 6px;
+    box-shadow: 3px 3px 3px 3px grey;
     width: 260px;
-    height: 200px;
+    height: 202px;
     
 }
 .m1 img 
@@ -157,20 +212,22 @@ button
 {
     margin-left: 4px;
 }
+
 /* SECTION LES PLUS POPULAIRES*/
 .tetpop
 {
     display: flex;
+    
     justify-content: space-around;
 }
 .popular
 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     
-    background-color: #DEEBFF;
-    width: 25%;
+    border-radius: 6px 6px 6px 6px;
+    background-color:#F2F2F2;
+    width: 28%;
 }
 .pop1 i
 {
@@ -185,6 +242,7 @@ button
     
     background-color: white;
     border-radius: 6px 6px 6px 6px;
+    box-shadow: 3px 3px 3px 3px grey;
     width: 320px;
     height: 130px;
     
@@ -205,7 +263,7 @@ button
 {
     display: flex;
     flex-flow: wrap;
-    justify-content: flex-start;
+    margin: auto;
     
     
 
@@ -216,30 +274,18 @@ button
     position: relative;
     width: 100%;
 }
-.left
+.left, .right
 {
     display: flex;
     flex-flow: wrap;
-    
+    justify-content: space-between;
     width: 50%;
-
 }
 .pic
 {
     display: flex;
     flex-flow: column;
 }
-.right
-{
-    display: flex;
-    flex-flow: wrap;
-    
-    
-    
-    width: 50%;
-
-}
-
 .act1
 {
     display: block;
@@ -248,7 +294,8 @@ button
     
     background-color: white;
     border-radius: 6px 6px 6px 6px;
-    width: 260px;
+    box-shadow: 3px 3px 3px 3px #F2F2F2;
+    width: 252px;
     height: 430px;
     
 }
@@ -263,16 +310,14 @@ button
 {
     display: flex;
     flex-flow: wrap;
-    
-    
     background-color: white;
     border-radius: 6px 6px 6px 6px;
-    width: 260px;
+    box-shadow: 3px 3px 3px 3px #F2F2F2;
+    width: 252px;
     height: 250px;
 }
 .act2 img
 {
-
     width: 250px;
     height: 220px;
     border-radius: 6px 6px 0px 0px;
@@ -282,11 +327,10 @@ button
 {
     display: flex;
     flex-flow: wrap;
-    
-    
     background-color: white;
     border-radius: 6px 6px 6px 6px;
-    width: 260px;
+    box-shadow: 3px 3px 3px 3px #F2F2F2;
+    width: 252px;
     height: 150px;
 }
 .act3 img
@@ -295,6 +339,7 @@ button
     width: 250px;
     height: 120px;
     border-radius: 6px 6px 0px 0px;
+    
     border: 1px solid white ;
 }
 footer
@@ -303,7 +348,7 @@ footer
     
     justify-content: space-around;
     
-    background-color: #DEEBFF;
+    background-color:#F2F2F2;
 }
 footer ul
 {

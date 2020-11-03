@@ -29,10 +29,15 @@
         </section>
         <!-- RECHERCHE ET FILTRES-->
         <section class= "recherche"> 
-            <nav class= "searchbox">
-                    <i class= "fas fa-map-marker-alt"></i>  <input type= "text" type= "search" name= "search"  placeholder = "marseille,France">
-                    <input type= "button" value= "Rechercher"/>
-            </nav>
+            <form class="barre2rech" method="GET">
+                <span class="barre2rechicon">
+                <i class="fas fa-map-marker-alt barre2rechicon2"></i>
+                </span>
+                <input class="barre2rechinput" type="search" placeholder="Marseille, France" size="1">
+                <button class="barre2rechclic">
+                <span class="barre2rechclicText">Rechercher</span>
+                </button>
+            </form>
             <div class= "filtre">
                 <p>Filtres</p>
                         <ul>
@@ -47,7 +52,7 @@
         <!-- SECTION HEBERGEMENTS A MARSEILLE -->
     <section class="hebpop">
         <section class= "hebergements">
-            <span><h2 id= "hebergements">Hébergements à Marseille</h2></span>
+            <div class="titleheb"><h2 id= "hebergements">Hébergements à Marseille</h2></div>
             <!--partie top-->
             <div class="top">
                 <article class= "m1">
@@ -88,7 +93,7 @@
             <div class="bottom">
                 <article class= "m1">
                     <a href= "img/mer2.jpg"><img src="img/mer1.jpg" alt="hotel de la mer"/></a>
-                <p><strong>Hôtel de la mer</strong> <br>Nuit a partirbatterie de <strong>46€</strong><br>
+                <p><strong>Hôtel de la mer</strong> <br>Nuit a partir de <strong>46€</strong><br>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -119,7 +124,7 @@
                 </p>
                 </article>
             </div>
-                <p><strong>Afficher plus</strong></p>
+                <span class="affich"><p><strong>Afficher plus</strong></p></span>
         </section>
         
 
@@ -161,7 +166,7 @@
         </section>
     </section>
         <section class= "Activités">
-            <span class="titleact"><h2 id= "Activités">Activités à Marseille</h2></span>
+            <div class="titleact"><h2 id= "Activités">Activités à Marseille</h2></div>
             <!--partie left-->
             <div class="left">
                 
@@ -203,7 +208,7 @@
                 
 
                 <div class="pic">
-                    <figure class= "act2">
+                    <figure class= "act3">
                         <a href = "img/dames2.jpg">
                         <img src= "img/dames1.jpg"                            
                             alt = "Notre dames"></a>
@@ -211,7 +216,7 @@
                     </figure>                    
                 
                 
-                    <figure class= "act3">
+                    <figure class= "act2">
                         <a href = "img/longchamps2.jpg">
                         <img src= "img/longchamp1.jpg" 
                             alt = "Parc Longchamps"></a>
