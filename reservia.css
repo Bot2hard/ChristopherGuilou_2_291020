@@ -2,73 +2,71 @@
 	font-family             : 'Raleway';
 	src                     : url('Raleway.ttf');
 }
-*
-{
+*{
 	font-family             : 'Raleway';
 }
 /* corps de page */
-body
-{
+body{
     margin: 0px;
     padding: 0px;
 }
-.bloc_page
-{
+.bloc_page{
     margin: 10px 200px 10px 200px ;
     padding: 0px;
 }
 /* SECTION ENTETE */
-.entete
-{
+header{
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
 }
-.navig1 ul
-{
+h1{
+    font-size: 1.25em;
+}
+.navig1 ul{
     display: flex; /* permet aux elements de l'UL de s'aligner*/
     list-style-type: none;/* eleveve les points de ma listes a puces */
 }
-.navig1 li
-{
-    margin-right: 15px;
+.navig1 li{
+    margin-right: 1.6em;
 }
-.navig1 a
-{
-    color: #181818;
-    
-    padding: 23px 0px 3px 0px ;
-    text-decoration: none;/* enleve la deco des liens*/
-}
-nav a:hover
-{
+.styl1 a{
     color: #0065FC;
-    
-    border-top: 3px solid #0065FC;
+    border-top: 0.188em solid #0065FC;
+    padding: 1.438em 0em 0.188em 0em;
+    text-decoration: none;
 }
-/* SECTION RECHERCHES ET FILTRES */
-.barre2rech
-{
-    display: inline-flex;
-    max-width: 100%;
-    overflow: auto;
+.styl2 a{
+    color: black;
+    padding: 1.438em 0em 0.188em 0em;
+    text-decoration: none;
+}
+.navig1 a:hover{
+    color: #0065FC;
+    border-top: 0.188em solid #0065FC;
 }
 
-.barre2rechicon 
-{
+.styl3{
+    color: #0065FC;
+}
+/* SECTION RECHERCHES ET FILTRES */
+.barre2rech{
+    display: inline-flex;
+    max-width: 100%;
+    /*overflow: auto;*/
+}
+
+.barre2rech--icon{
     background-color: #F2F2F2;
     padding: 1rem 1.25rem; /* permet de determiner la marge interne du bouton*/
     border-radius: 1rem 0 0 1rem;/* permet d'arrondir les angles de la bordure*/
     text-align: center;
 }
 
-.barre2rechicon2
-{
+.barre2rech--icon2{
     margin-left: 0.1rem; /* ajuste la marge gauche de l'icone pour la centrer */
 }
 
-.barre2rechinput /* mise en forme de la partie input 'texte a rentrer pour la recherche' */
-{
+.barre2rech--input{/* mise en forme de la partie input 'texte a rentrer pour la recherche' */
     border-right: none;/* efface bordure gauche et droite */ 
     border-left: none;
     border-top: #F2F2F2 1px solid;
@@ -77,13 +75,11 @@ nav a:hover
     box-sizing: border-box;
     width: 14rem;
 }
-.barre2rechinput::placeholder /* couleur du texte pré rentré dans le champs */
-{
-    color: #00000069;
+.barre2rech--input::placeholder{ 
+    color: #00000069;/* couleur du texte pré rentré dans le champs */
 }
 
-.barre2rechclic /* mise en forme de la partie clic pour valider le champs entré*/
-{
+.barre2rech--clic{ /* mise en forme de la partie clic pour valider le champs entré*/
     background-color: #0065FC;
     color: white;
     font-weight: bold;
@@ -91,270 +87,258 @@ nav a:hover
     border-radius: 0 1rem 1rem 0; 
     padding: 0 1.5rem; 
 }
-.recherche
-{
+.recherche{
     display: flex;
     flex-flow: column;
+    justify-content: space-around;
+    height: 13em;
 }
-.searchbox
-{
-    margin-bottom: 5px;
+.searchbox{
+    margin-bottom: 0.313em;
 }
-button
-{
+button{
     background-color: white;
     border-radius: 15% / 55%;
     color: #0065FC;
 }
-.icolor i
-{
+.icolor i{
     color: #0065FC;
 
 }
-.filtre
-{
+.filtre{
     display: flex;
-}
-.filtre ul
-{
-    display: flex;
-    list-style-type: none;
-    padding: 0px;
-}
-.filtre i
-{
-    background-color: #DEEBFF;
-    color: #0065FC;
-    width: 20px;
-    height: 20px;
-    border-radius: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    width: 70%;
 
 }
-.filtre li
-{
-    margin-left: 10px;    
+.filtre--text{
+    padding: 0px 15px 0px 15px;
 }
-.filtre a
-{
-    text-decoration: none;
-    color: #181818;
-    padding-bottom: 3px;
-}
-.filtre a:hover
-{
-    color: #0065FC;
-    border-bottom: 3px solid#0065FC;
-}
-/* SECTION HEBERGEMENTS A MARSEILLE */ 
-.hebpop
-{
+.icon--border{
     display: flex;
-    justify-content: space-between;    
-}
-.titleheb
-{
-    display: flex;
-    position: relative;
-    width: 50%;
-    margin-left: 25px;
-}
-.affich
-{
-    display: flex;
-    position: relative;
-    width: 50%;
-    margin-left: 25px;
-    margin-bottom: 35px;
-}
-.hebergements
-{
-    display: flex;
-    flex-flow: column;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border:2px solid transparent;
     background-color: #F2F2F2;
-    border-radius: 6px 6px 6px 6px;
-    width: 67%;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    
 }
-.hebergements i
-{
+.icon{
+    color: #0065FC;
+}
+.icon--text{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: bolder;
+    border:2px solid #F2F2F2;
+    border-radius: 26px 25px 25px 26px;
+    height: 40px;
+    width: auto;    
+}
+.info--align{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.info--border{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border:2px solid #F2F2F2;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+}
+.info{
     color: #0065FC;
     font-size: 10px;
 }
-.top, .bottom
-{
+/* SECTION HEBERGEMENTS A MARSEILLE */ 
+.hebpop{
     display: flex;
-    justify-content: space-between;
-    margin: 5px 25px 5px 25px;
-    height: 300px ;
-    width: 900px;
+    justify-content: space-between;    
 }
-.m1
-{
+.hebergements{
     display: flex;
     flex-flow: column;
+    background-color: #F2F2F2;
+    border-radius: 0.8em;
+    width: 68%;
+}
+.hebergements--pix{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    
+
+}
+.hebergements i{
+    color: #0065FC;
+    font-size: 0.7em;
+}
+.m1{
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 2em;
     background-color: white;
-    border-radius: 6px 6px 6px 6px;
-    box-shadow: 3px 3px 3px 3px grey;
-    width: 260px;
-    height: 202px;
+    border-radius: 0.8em;
+    box-shadow: 0.188em 0.188em 0.188em 0.188em grey;
+    width: 16.25em;
+    height: 12.625em;
     
 }
-.m1 img 
-{
-    margin-top : 4px;
-    margin-left: 4px;
-    width: 250px;
-    height: 120px;
-    border-radius: 6px 6px 0px 0px;
-    border: 1px solid white ;
+.m1 img{
+    margin-top : 0.25em;
+    margin-left: 0.25em;
+    width: 15.625em;
+    height: 7.5em;
+    border-radius: 0.8em 0.8em 0em 0em;
+    border: 0.063em solid white ;
     
 }
-.m1 p
-{
-    margin-left: 4px;
+.m1 p{
+    margin-left: 0.25em;
 }
 
 /* SECTION LES PLUS POPULAIRES*/
-.tetpop
-{
+.tetpop{
     display: flex;
-    
+    align-items: center;
     justify-content: space-around;
 }
-.popular
-{
+.popular{
     display: flex;
     flex-direction: column;
     
-    border-radius: 6px 6px 6px 6px;
+    border-radius: 0.8em;
     background-color:#F2F2F2;
     width: 28%;
 }
-.pop1 i
-{
+.pop1 i{
     color: #0065FC;
-    font-size: 10px;    
+    font-size: 0.625em;    
 }
 
-.pop1
-{
+.pop1{
     display: flex;
     margin: auto;
     
     background-color: white;
-    border-radius: 6px 6px 6px 6px;
-    box-shadow: 3px 3px 3px 3px grey;
-    width: 320px;
-    height: 130px;
+    border-radius: 0.375em 0.375em 0.375em 0.375em;
+    box-shadow: 0.188em 0.188em 0.188em 0.188em grey;
+    width: 20em;
+    height: 8.125em;
     
 }
-.pop1 img
-{
+.pop1 img{
     display: flex;
-    margin-top : 4px;
-    margin-left: 4px;
-    width: 120px;
-    height: 120px;
-    border-radius: 6px 6px 0px 0px;
-    border: 1px solid white ;
+    margin-top : 0.25em;
+    margin-left: 0.25em;
+    width: 7.5em;
+    height: 7.5em;
+    border-radius: 0.375em 0.375em 0em 0em;
+    border: 0.063em solid white ;
     
 }
 /* PARTIE ACTIVITES A MARSEILLE*/
-.Activités
-{
-    display: flex;
-    flex-flow: wrap;
-    margin: auto;
-    
-    
-
-}
-.titleact
-{
+.titleact{
     display: inline;
     position: relative;
     width: 100%;
 }
-.left, .right
+.Activites{
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: space-between;
+    
+}
+/*.left 
 {
     display: flex;
-    flex-flow: wrap;
+    
     justify-content: space-between;
-    width: 50%;
+    width: 48%;
 }
-.pic
+.right
 {
+    display: flex;
+    
+    justify-content: space-between;
+    width: 48%;
+}*/
+.pic{
     display: flex;
     flex-flow: column;
 }
-.act1
-{
-    display: block;
-    
-    
-    
+.act1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: white;
-    border-radius: 6px 6px 6px 6px;
+    border-radius: 0.375em 0.375em 0.375em 0.375em;
     box-shadow: 3px 3px 3px 3px #F2F2F2;
-    width: 252px;
-    height: 430px;
+    width: 15.75em;
+    height: 26.875em;
     
 }
-.act1 img
-{
-    width: 250px;
-    height: 400px;
-    border-radius: 6px 6px 0px 0px;
+.act1 img{
+    width: 15.625em;
+    height: 25em;
+    border-radius: 0.375em 0.375em 0em 0em;
     border: 1px solid white ;
 }
-.act2
-{
+.act2{
     display: flex;
-    flex-flow: wrap;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: white;
-    border-radius: 6px 6px 6px 6px;
-    box-shadow: 3px 3px 3px 3px #F2F2F2;
-    width: 252px;
-    height: 250px;
+    border-radius: 0.375em 0.375em 0.375em 0.375em;
+    box-shadow: 0.188em 0.188em 0.188em 0.188em #F2F2F2;
+    width: 15.75em;
+    height: 15.625em;
 }
-.act2 img
-{
-    width: 250px;
-    height: 220px;
-    border-radius: 6px 6px 0px 0px;
-    border: 1px solid white ;
+.act2 img{
+    width: 15.625em;
+    height: 12em;
+    border-radius: 0.375em 0.375em 0em 0em;
+    border: 0.063em solid white ;
 }
-.act3
-{
+.act3{
     display: flex;
-    flex-flow: wrap;
+    flex-flow: column;
+    justify-content: space-around;
     background-color: white;
-    border-radius: 6px 6px 6px 6px;
-    box-shadow: 3px 3px 3px 3px #F2F2F2;
-    width: 252px;
-    height: 150px;
+    border-radius: 0.375em 0.375em 0.375em 0.375em;
+    box-shadow: 0.188em 0.188em 0.188em 0.188em #F2F2F2;
+    width: 15.75em;
+    height: 9.375em;
 }
-.act3 img
-{
+.act3 img{
 
-    width: 250px;
-    height: 120px;
-    border-radius: 6px 6px 0px 0px;
+    width: 15.625em;
+    height: 7.5em;
+    border-radius: 0.375em 0.375em 0em 0em;
     
-    border: 1px solid white ;
+    border: 0.063em solid white ;
 }
-footer
-{
+footer{
     display: flex;
     
     justify-content: space-around;
     
     background-color:#F2F2F2;
 }
-footer ul
-{
+footer ul{
     list-style-type: none;
 }
-.foot
-{
+.foot{
     width: 25%;
 }
