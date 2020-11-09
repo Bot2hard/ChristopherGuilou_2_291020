@@ -17,36 +17,36 @@ body{
 /* SECTION ENTETE */
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
-h1{
-    font-size: 1.25em;
+.logo-lien{
+    margin-right: auto;
 }
-.navig1 ul{
-    display: flex; /* permet aux elements de l'UL de s'aligner*/
-    list-style-type: none;/* eleveve les points de ma listes a puces */
+.nav-lien:link,
+.nav-lien:visited{
+    text-decoration: none;
+    padding: 0.625em 1.875em;
 }
-.navig1 li{
-    margin-right: 1.6em;
+.styl2:hover,
+.style3:hover{
+    border-top: 0.188em solid #0065FC;
+    padding: 1.438em 0em 0.188em 0em;
 }
-.styl1 a{
+.styl1{
     color: #0065FC;
     border-top: 0.188em solid #0065FC;
     padding: 1.438em 0em 0.188em 0em;
     text-decoration: none;
 }
-.styl2 a{
+.styl2{
     color: black;
     padding: 1.438em 0em 0.188em 0em;
     text-decoration: none;
 }
-.navig1 a:hover{
-    color: #0065FC;
-    border-top: 0.188em solid #0065FC;
-}
-
 .styl3{
     color: #0065FC;
+    font-weight: bolder;
 }
 /* SECTION RECHERCHES ET FILTRES */
 .barre2rech{
@@ -110,12 +110,12 @@ button{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-left: 15px;
+    padding-left: 0.938em;
     width: 70%;
 
 }
 .filtre--text{
-    padding: 0px 15px 0px 15px;
+    padding: 0em 0.938em 0em 0.938em;
 }
 .icon--border{
     display: flex;
@@ -125,8 +125,8 @@ button{
     border:2px solid transparent;
     background-color: #F2F2F2;
     border-radius: 100%;
-    height: 40px;
-    width: 40px;
+    height: 2.5em;
+    width: 2.5em;
     
 }
 .icon{
@@ -137,9 +137,9 @@ button{
     justify-content: flex-start;
     align-items: center;
     font-weight: bolder;
-    border:2px solid #F2F2F2;
-    border-radius: 26px 25px 25px 26px;
-    height: 40px;
+    border:0.125em solid #F2F2F2;
+    border-radius: 1.625em 1.563em 1.563em 1.625em;
+    height: 2.5em;
     width: auto;    
 }
 .info--align{
@@ -154,12 +154,12 @@ button{
     justify-content: center;
     border:2px solid #F2F2F2;
     border-radius: 100%;
-    height: 30px;
-    width: 30px;
+    height: 1.875em;
+    width: 1.875em;
 }
 .info{
     color: #0065FC;
-    font-size: 10px;
+    font-size: 0.625em;
 }
 /* SECTION HEBERGEMENTS A MARSEILLE */ 
 .hebpop{
@@ -172,6 +172,13 @@ button{
     background-color: #F2F2F2;
     border-radius: 0.8em;
     width: 68%;
+}
+.hebergements h2{
+    margin-left: 1.563em;
+}
+.hebergements .affich{
+    margin-left: 1.563em;
+    margin-bottom: 1.6em;
 }
 .hebergements--pix{
     display: flex;
@@ -193,7 +200,6 @@ button{
     box-shadow: 0.188em 0.188em 0.188em 0.188em grey;
     width: 16.25em;
     height: 12.625em;
-    
 }
 .m1 img{
     margin-top : 0.25em;
@@ -202,11 +208,11 @@ button{
     height: 7.5em;
     border-radius: 0.8em 0.8em 0em 0em;
     border: 0.063em solid white ;
-    
 }
 .m1 p{
     margin-left: 0.25em;
 }
+
 
 /* SECTION LES PLUS POPULAIRES*/
 .tetpop{
@@ -224,15 +230,17 @@ button{
 }
 .pop1 i{
     color: #0065FC;
-    font-size: 0.625em;    
+    font-size: 0.625em;
+    margin-top: 0.25em;
 }
 
 .pop1{
     display: flex;
+    flex-flow: wrap;
     margin: auto;
     
     background-color: white;
-    border-radius: 0.375em 0.375em 0.375em 0.375em;
+    border-radius: 0.8em;
     box-shadow: 0.188em 0.188em 0.188em 0.188em grey;
     width: 20em;
     height: 8.125em;
@@ -244,7 +252,7 @@ button{
     margin-left: 0.25em;
     width: 7.5em;
     height: 7.5em;
-    border-radius: 0.375em 0.375em 0em 0em;
+    border-radius: 0.8em 0em 0em 0.8em;
     border: 0.063em solid white ;
     
 }
