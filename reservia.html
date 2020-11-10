@@ -11,75 +11,33 @@
 </head>
 
 <body>
+<!-- SECTION ENTETE ET NAVIGATION-->
     <div class="bloc_page">
         <header class="navigation">
             <a href="#home" class="logo-lien">
                 <img src="img/Reservia.svg" alt="logo du site reservia" class="logo-image">
             </a>
             <nav class="navig1">
-                <span class="styl1">
-                    <a href="#hebergements" class="nav-lien">Hébergements</a>
-                </span>
-                <span class="styl2">
-                <a href="#Activites" class="nav-lien">Activités</a>
-                </span>
-                <span class="styl3">
-                    <a href="#" class="nav-lien">S'inscrire</a>
-                </span>
-            </nav>
+                <a href="#hebergements" class="nav-lien">
+                    Hébergements
+                </a>
+                <a href="#Activites" class="nav-lien1">
+                    Activités
+                </a>
+            </nav>    
+                <a href="#" class="nav-lien2">
+                    S'inscrire
+                </a>
         </header>
-        <section>
+        <section class="navigation--titre">
             <h1>
                 Trouvez votre hébergements pour des vacances de rêve
             </h1>
-    
             <p>
                 En plein centre ville ou en pleine nature
             </p>
-    
         </section>
-
-
-
-
-
-        <!-- SECTION ENTETE ET NAVIGATION-->
-        <!--<header>
-            <div class="titre">
-                <div class="logo">
-                    <a href="img/reserv.png">
-                        <img src="img/Reservia.svg" alt="le logo du site reservia" />
-                    </a>
-                    <h1>
-                        Trouvez votre hébergements pour des vacances de rêve
-                    </h1>
-                </div>
-                <p>
-                    En plein centre ville ou en pleine nature
-                </p>
-            </div>
-
-            <nav class="navig1">
-                <ul>
-                    <span class="styl1">
-                        <li>
-                            <a href="#hebergements">hébergements</a>
-                        </li>
-                    </span>
-                    <span class="styl2">
-                        <li>
-                            <a href="#Activites">Activités</a>
-                        </li>
-                    </span>
-                    <span class="styl3">
-                        <li>
-                            S'inscrire
-                        </li>
-                    </span>
-                </ul>
-            </nav>
-        </header>-->
-        <!-- RECHERCHE ET FILTRES-->
+<!-- RECHERCHE ET FILTRES-->
         <section class="recherche">
             <form class="barre2rech" method="GET">
                 <span class="barre2rech--icon">
@@ -87,15 +45,19 @@
                 </span>
                 <input class="barre2rech--input" type="search" placeholder="Marseille, France" size="1">
                 <button class="barre2rech--clic">
+                    <i class="fas fa-search barre2rech--icon3"></i>
                     <span class="barre2rech--Text">
                         Rechercher
+                        
                     </span>
                 </button>
             </form>
+            
             <div class="filtre">
-                <p>
-                    <strong>Filtres</strong>
-                </p>
+                <h2>
+                    Filtres
+                </h2>
+                <div class="filtre--icon">    
                     <div class="icon--text">
                         <span class="icon--border">
                         <i class="fas fa-money-bill-wave icon"></i>
@@ -128,6 +90,7 @@
                                 Animaux autorisés
                             </span>
                     </div>
+                </div>
             </div>
             <div class="info--align">
                 <span class="info--border">
@@ -261,14 +224,14 @@
                         <strong>Hôtel le soleil du<br>
                             matin</strong> <br>
                         Nuit a partir de <strong>128€</strong><br>
+                    
+                    
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </p>
-                    <span class="pop1--i">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </span>
                 </article>
 
                 <article class="pop1">
@@ -305,7 +268,7 @@
         </div>
         <section class="Activites">
             <h2 id="Activites">Activités à Marseille</h2>
-            <!--partie left-->
+            <!--
                 <article class="act1">
                     <a href="img/vieuxport2.jpg">
                         <img src="img/vieuxport1.jpg" alt=" photo du Vieux Port">
@@ -334,7 +297,7 @@
                         </p>
                     </article>
                 </div>
-            <!-- partie right -->
+            
                 <article class="act1">
                     <a href="img/calanques2.jpg">
                         <img src="img/calanques1.jpg" alt="photo du Parc des Calanques">
@@ -364,7 +327,66 @@
                             <strong>Parc Longchamps</strong>
                         </p>
                     </article>
-                </div>
+                </div> -->
+                <article class="activites--img">
+                    <span class="act1">
+                    <a href="img/vieuxport2.jpg">
+                        <img src="img/vieuxport1.jpg" alt=" photo du Vieux Port">
+                    </a>
+                    <p>
+                        <strong>Vieux Port</strong>
+                    </p>
+                    </span>
+                        <div class="pic">
+                            <span class="act2">
+                                <a href="img/fort2.jpg">
+                                    <img src="img/fort1.jpg" alt="photo du Fort du Pomègues">
+                                </a>
+                                <p>
+                                    <strong>Fort de Pomègues</strong>
+                                </p>
+                            </span>
+        
+                            <span class="act3">
+                                <a href="img/frioul2.jpg">
+                                    <img src="img/frioul1.jpg" alt="photo de l'Iles du Frioul">
+                                </a>
+                                <p>
+                                    <strong>Iles du Frioul</strong>
+                                </p>
+                            </span>
+                        </div>
+                        <span class="act1">
+                            <a href="img/calanques2.jpg">
+                                <img src="img/calanques1.jpg" alt="photo du Parc des Calanques">
+                            </a>
+                            <p>
+                                <strong>Parc Nationale des Calanques</strong>
+                            </p>
+                        </span>
+        
+        
+                        <div class="pic">
+                            <span class="act3">
+                                <a href="img/dames2.jpg">
+                                    <img src="img/dames1.jpg" alt="photo de Notre dames de la Notre-Dames-de-la-Garde">
+                                </a>
+                                <p>
+                                    <strong>Notre-Dames-de-la-Garde</strong>
+                                </p>
+                            </span>
+        
+        
+                            <span class="act2">
+                                <a href="img/longchamps2.jpg">
+                                    <img src="img/longchamp1.jpg" alt="photo du Parc Longchamps">
+                                </a>
+                                <p>
+                                    <strong>Parc Longchamps</strong>
+                                </p>
+                            </span>
+                        </div>
+                </article>
         </section>
     </div>
     <!-- Mentions légales -->
