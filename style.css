@@ -444,3 +444,324 @@ footer ul{
 footer li{
     margin-bottom: 0.5em;
 }
+@media screen and (max-width: 375px){
+    .bloc_page{
+        margin: auto;
+    }
+    /* SECTION ENTETE */
+    header{
+        display: flex;
+        flex-flow: wrap;
+    }
+    .logo-lien{
+        order: 0;
+        
+    }
+    .nav-lien2{
+        order: 1;
+
+    }
+    .navig1{
+        order: 2;
+        width: 100%;
+        display: flex;
+        
+    }
+    .navig1 a{
+        margin-right: 0em;
+    }
+    .nav-lien{
+        width: 50%;
+        border-top: none;
+        border-bottom:3px solid #0065FC;
+        display: flex;
+        justify-content: center;
+    }
+    .nav-lien1{
+        width: 50%;
+        border-top: none;
+        border-bottom:3px solid #F2F2F2;
+        display: flex;
+        justify-content: center;
+    }
+    .nav-lien1:hover{
+        border-top: none;
+    }
+    .navigation--titre,
+    .info--align{
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+/* SECTION RECHERCHES ET FILTRES */
+    .barre2rech{
+        margin-left: 1em;
+    
+    }
+    .barre2rech--Text{
+        display: none;
+    }
+    .filtre{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .filtre h2,
+    .filtre--icon{
+        margin-left: 1em;
+    }
+    .filtre--icon{
+        display: flex;
+        flex-flow: wrap;
+    }
+    .icon--text{
+        margin-left: 0;
+        margin-right: 0.5em;
+        margin-bottom: 0.5em;
+    }
+/* SECTION POPULAIRE ET HEBERGEMENT */
+    .hebpop{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;    
+    }
+    .tetpop{
+        justify-content: space-between;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .popular{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        border-radius: 0em;
+    }
+    .picture--pop{
+        display: flex;
+        flex-flow: wrap;
+        padding:0.1em 0.1em 0.1em 0.1em ;
+        margin:0.5em 0.5em 0.5em 0.5em ;
+    }
+    .picture--pop img{
+        display: flex;
+        margin: 0.1em 0.1em 0.1em 0.1em;
+        width: 7.5em;
+        height: 7.5em;
+        border-radius: 0.8em 0em 0em 0.8em;
+        border: none;
+        
+    }
+    .hebergements{
+        display: flex;
+        flex-flow: column;
+        width: auto;
+        background-color: white;
+        width: 100%;
+    }
+    .picture--heberg{
+        
+        width: auto;
+    }
+    .picture--heberg img{
+        margin-right: 0.25em;
+        width: 98%;
+        
+    }
+    .Activites{
+        width: auto;
+    }
+    .Activites h2{
+        margin-left: 1em;
+    }
+    .activites--img{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+    .picture--heberg,
+    .picture--pop,
+    .picture--high,
+    .picture--medium,
+    .picture--small{
+        width: auto;
+        height: auto;
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-bottom: 1.5em;
+    }
+    .picture--high img,
+    .picture--medium img,
+    .picture--small img{
+        width: 99%;
+        height: 8.5em;
+    }
+    .picture--heberg img{
+        width: 99%;
+        height: 7em;
+    }
+    .hebergements h2{
+        margin-left: 1em;
+    }
+    .hebergements--pix{
+        margin: 0;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        padding-top: 0;
+    }
+    footer ul{
+        margin-left: 0;
+    }
+}
+@media screen and (min-width:376px) and (max-width: 768px){
+    .bloc_page{
+        margin: auto;
+    }
+    /* SECTION ENTETE */
+    header{
+        display: flex;
+        flex-flow: wrap;
+    }
+    .logo-lien{
+        order: 0;
+        
+    }
+    .nav-lien2{
+        order: 1;
+
+    }
+    .navig1{
+        order: 2;
+        width: 100%;
+        display: flex;
+        
+    }
+    .navig1 a{
+        margin-right: 0em;
+    }
+    .nav-lien{
+        width: 50%;
+        border-top: none;
+        border-bottom:3px solid #0065FC;
+        display: flex;
+        justify-content: center;
+    }
+    .nav-lien1{
+        width: 50%;
+        border-top: none;
+        border-bottom:3px solid #F2F2F2;
+        display: flex;
+        justify-content: center;
+    }
+    .nav-lien1:hover{
+        border-top: none;
+    }
+    .navigation--titre,
+    .info--align{
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+/* SECTION RECHERCHES ET FILTRES */
+    .barre2rech{
+        margin-left: 1em;
+        justify-content: center;
+    }
+    .barre2rech--clic{
+        border-radius: 1rem;
+    }
+    .barre2rech--Text{
+        display: none;
+    }
+    .filtre{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .filtre h2,
+    .filtre--icon{
+        margin-left: 1em;
+    }
+    .filtre--icon{
+        display: flex;
+        flex-flow: wrap;
+    }
+    .icon--text{
+        margin-left: 0;
+        margin-right: 0.5em;
+        margin-bottom: 0.5em;
+    }
+/* SECTION POPULAIRE ET HEBERGEMENT */
+    .hebpop{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;    
+    }
+    .tetpop{
+        display: flex;
+        width: 50%;
+    }
+    .popular{
+        display: flex;
+        flex-flow: column;
+        margin: auto;
+        align-items: center;
+        width: 75%;
+        border-radius: 0em;
+    }
+    .picture--pop{
+        margin-bottom: 1.5em;
+    }
+    .hebergements{
+        width: auto;
+        background-color: #ffff;
+    }
+    .hebergements h2{
+        margin: auto;
+    }
+    .hebergements--pix{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2em;
+        margin-top: 2em;
+    }
+    .picture--heberg{
+        width: 12em;
+    }
+    .picture--heberg img{
+        width: 11.5em;
+    }
+    .Activites{
+        align-items: center;
+    }
+    .Activites h2{
+        
+    }
+    .activites--img{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width: 75%;
+    }
+    .picture--small,
+    .picture--medium,
+    .picture--high{
+        width: 100%;
+        height: 16em;
+        margin-bottom: 1em;
+    }
+    .picture--small img,
+    .picture--medium img,
+    .picture--high img{
+        width: 99%;
+        height: 13em;
+    }
+    footer{
+        display: flex;
+        padding-top: 0;
+    }
+    footer ul{
+        margin-left: 0;
+    }
+}
