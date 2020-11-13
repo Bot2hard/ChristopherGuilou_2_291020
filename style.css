@@ -5,7 +5,7 @@
 *{
 	font-family             : 'Raleway';
 }
-/* corps de page et police */
+/* corps de page et  police */
 body{
     margin: 0px;
     padding: 0px;
@@ -444,7 +444,7 @@ footer ul{
 footer li{
     margin-bottom: 0.5em;
 }
-@media screen and (max-width: 375px){
+@media screen and (max-width: 414px){
     .bloc_page{
         margin: auto;
     }
@@ -453,12 +453,16 @@ footer li{
         display: flex;
         flex-flow: wrap;
     }
+    .logo-image{
+        margin-left: 1em;
+    }
     .logo-lien{
         order: 0;
         
     }
     .nav-lien2{
         order: 1;
+        margin-right: 1em;
 
     }
     .navig1{
@@ -615,7 +619,7 @@ footer li{
         margin-left: 0;
     }
 }
-@media screen and (min-width:376px) and (max-width: 768px){
+@media screen and (min-width:415px) and (max-width: 768px){
     .bloc_page{
         margin: auto;
     }
@@ -628,8 +632,12 @@ footer li{
         order: 0;
         
     }
+    .logo-image{
+        margin-left: 1em;
+    }
     .nav-lien2{
         order: 1;
+        margin-right: 1em;
 
     }
     .navig1{
@@ -667,9 +675,6 @@ footer li{
     .barre2rech{
         margin-left: 1em;
         justify-content: center;
-    }
-    .barre2rech--clic{
-        border-radius: 1rem;
     }
     .barre2rech--Text{
         display: none;
