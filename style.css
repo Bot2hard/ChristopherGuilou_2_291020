@@ -32,6 +32,12 @@ p{
     margin-left: 0;
     font-size: 12px;
 }
+.hebergement__text .etoile{
+    color: #8d8989;
+}
+.picture--poptext .etoile{
+    color: #8d8989;
+}
 /* SECTION ENTETE */
 header{
     display: flex;
