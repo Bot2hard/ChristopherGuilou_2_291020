@@ -776,3 +776,57 @@ footer li{
         margin-left: 0;
     }
 }
+@media screen and (min-width:769px) and (max-width: 1024px){
+    .bloc_page{
+        margin: auto;
+    }
+    header{
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .navigation--titre{
+        text-align: center;
+    }
+    .filtre,
+    .barre2rech{
+        justify-content: center;
+    }
+    .picture--pop{
+        width: 90%;
+    }
+    .popular{
+        width: 35%;
+        margin-right: 1em;
+    }
+    .hebergements{
+        width: 60%;
+    }
+    .Activites h2{
+        text-align: center;
+    }
+    .hebergements,
+    .Activites{
+        margin-left: 1em;
+    }
+    .activites--img{
+        justify-content: space-evenly;
+    }
+    .picture--high{
+        width: 10em;
+    }
+    .picture--medium,
+    .picture--small{
+        width: 12em;
+    }
+    .picture--high img{
+        width: 10em;
+    }
+    .picture--medium img,
+    .picture--small img{
+        width: 12em;
+    }
+    footer ul{
+        margin-left: 5em;
+    }
+
+}
