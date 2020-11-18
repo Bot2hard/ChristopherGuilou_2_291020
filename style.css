@@ -11,7 +11,7 @@ body{
     padding: 0px;
 }
 .bloc_page{
-    margin: 10px 250px 10px 250px ;
+    margin: 10px 100px 10px 100px ;
     padding: 0px;
 }
 h1{
@@ -204,7 +204,6 @@ button{
 /* SECTION HEBERGEMENTS A MARSEILLE */ 
 .hebpop{
     display: flex;
-    justify-content: space-between;
     margin-top: 2em;
 }
 .hebergements{
@@ -213,7 +212,8 @@ button{
     background-color: #F2F2F2;
     border-radius: 0.8em;
     padding-top: 1em;
-    width: 66%;
+    max-width: 895px;
+    margin-right: 1.5em;
 }
 .hebergements h2{
     margin-left: 2em;
@@ -283,7 +283,7 @@ button{
     
     border-radius: 1.25em;
     background-color:#F2F2F2;
-    width: 31%;
+    width: 400px;
 }
 .picture--pop h3{
     margin-top: 1em;
@@ -445,7 +445,8 @@ footer h3{
 }
 footer ul{
     list-style-type: none;
-    margin-left: 13em;
+    margin-left: 4em;
+    margin-right: 4em;
 }
 footer li{
     margin-bottom: 0.5em;
@@ -589,7 +590,11 @@ footer li{
         width: auto;
         height: auto;
     }
-    .picture--heberg,
+    .picture--heberg{
+        margin-left: 1em;
+        margin-right: 1em;
+        width: 100%;
+    }
     .picture--pop,
     .picture--high,
     .picture--medium,
@@ -754,6 +759,9 @@ footer li{
         flex-flow: column;
         align-items: center;
         width: 75%;
+    }
+    .picture--medium--small{
+        width: 100%;
     }
     .picture--small,
     .picture--medium,
