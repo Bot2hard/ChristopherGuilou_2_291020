@@ -11,7 +11,7 @@ body{
     padding: 0px;
 }
 .bloc_page{
-    margin: 10px 100px 10px 100px ;
+    margin: 10px 300px 10px 300px ;
     padding: 0px;
 }
 h1{
@@ -445,8 +445,8 @@ footer h3{
 }
 footer ul{
     list-style-type: none;
-    margin-left: 4em;
-    margin-right: 4em;
+    margin-left: 16em;
+    margin-right: 1em;
 }
 footer li{
     margin-bottom: 0.5em;
