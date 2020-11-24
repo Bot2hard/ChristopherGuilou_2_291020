@@ -11,7 +11,7 @@ body{
     padding: 0px;
 }
 .bloc_page{
-    margin: 10px 300px 10px 300px ;
+    margin: 10px 100px 10px 100px ;
     padding: 0px;
 }
 h1{
@@ -212,7 +212,7 @@ button{
     background-color: #F2F2F2;
     border-radius: 0.8em;
     padding-top: 1em;
-    max-width: 895px;
+    width: 65%;
     margin-right: 1.5em;
 }
 .hebergements h2{
@@ -228,6 +228,7 @@ button{
     margin-bottom: 1.6em;
 }
 .hebergements--pix{
+    object-fit: cover;
     display: flex;
     flex-flow: wrap;
     margin-left: 2em;
@@ -248,7 +249,7 @@ button{
     background-color: white;
     border-radius: 1.25em;
     box-shadow: 0.188em 0.188em 0.188em 0.188em #DEEBFF;
-    width: 16em;
+    width: 30%;
     height: 12.5em;
 }
 .picture--heberg:hover{
@@ -260,7 +261,7 @@ button{
     margin-left: 0.25em;
     margin-right: 0.25em;
     object-fit: cover;
-    width: 15.5em;
+    width: 97%;
     height: 7em;
     border-radius: 1.25em 1.25em 0em 0em;
     
@@ -283,7 +284,7 @@ button{
     
     border-radius: 1.25em;
     background-color:#F2F2F2;
-    width: 400px;
+    width: 35%;
 }
 .picture--pop h3{
     margin-top: 1em;
@@ -309,7 +310,7 @@ button{
     background-color: white;
     border-radius: 1.25em;
     box-shadow: 0.188em 0.188em 0.188em 0.188em  #DEEBFF;
-    width: 21em;
+    width: 80%;
     height: 8.5em;
     
 }
@@ -332,11 +333,11 @@ pop1--icon{
 }
 .picture--pop img{
     display: flex;
-    
+    object-fit: cover;
     margin-top : 0.25em;
     margin-left: 0.25em;
     margin-bottom: 0.25em;
-    width: 8em;
+    width: 36%;
     height: 8em;
     border-radius: 1.25em 0em 0em 1.25em;
     border: 0.063em solid white ;
@@ -348,7 +349,9 @@ pop1--icon{
     justify-content: space-between;
     margin-top: 2em;
     margin-bottom: 3.125em;
+    width: 100%;
 }
+
 .activites--img{
     display: flex;
     justify-content: space-between;
@@ -373,6 +376,7 @@ pop1--icon{
     display: flex;
     flex-flow: column;
     justify-content: space-between;
+    width: 24%;
 }
 .picture--high{
     display: flex;
@@ -382,14 +386,14 @@ pop1--icon{
     background-color: white;
     border-radius: 1.25em 1.25em 1.25em 1.25em;
     box-shadow: 3px 3px 3px 3px #F2F2F2;
-    width: auto;
+    width: 24%;
     height: 28em;
     
 }
 .picture--high img{
     object-fit: cover;
     margin-top: 0em;
-    width: 19em;
+    width: 99%;
     height: 24.5em;
     border-radius: 1.25em 1.25em 0em 0em;
     border: 1px solid white ;
@@ -401,13 +405,13 @@ pop1--icon{
     background-color: white;
     border-radius: 1.25em 1.25em 1.25em 1.25em;
     box-shadow: 0.188em 0.188em 0.188em 0.188em #F2F2F2;
-    width: auto;
+    width: 100%;
     height: 15em;
 }
 .picture--medium img{
     object-fit: cover;
     margin-top: 0;
-    width: 19em;
+    width: 99%;
     height: 11.5em;
     border-radius: 1.25em 1.25em 0em 0em;
     border: 0.063em solid white ;
@@ -419,16 +423,15 @@ pop1--icon{
     background-color: white;
     border-radius: 1.25em 1.25em 1.25em 1.25em;
     box-shadow: 0.188em 0.188em 0.188em 0.188em #F2F2F2;
-    width: auto;
+    width: 100%;
     height: 10.5em;
 }
 .picture--small img{
     object-fit: cover;
     margin-top: 0em;
-    width: 19em;
+    width: 99%;
     height: 6.8em;
     border-radius: 1.25em 1.25em 0em 0em;
-    
     border: 0.063em solid white ;
 }
 /* PARTIE FOOTER BAS DE PAGE */ 
@@ -445,15 +448,15 @@ footer h3{
 }
 footer ul{
     list-style-type: none;
-    margin-left: 16em;
-    margin-right: 1em;
+    margin-left: 4.5em;
+    margin-right: 15em;
 }
 footer li{
     margin-bottom: 0.5em;
 }
-@media screen and (max-width: 414px){
+@media screen and (max-width: 415px){
     .bloc_page{
-        margin: auto;
+        margin: 0;
     }
     /* SECTION ENTETE */
     header{
@@ -533,7 +536,7 @@ footer li{
     .hebpop{
         display: flex;
         flex-direction: column-reverse;
-        justify-content: space-between;    
+        width: 100%;    
     }
     .tetpop{
         justify-content: space-between;
@@ -546,32 +549,36 @@ footer li{
         justify-content: center;
         width: 100%;
         border-radius: 0em;
+        padding-bottom: 2em;
+        
+    }
+    .popular h2{
+        margin-left: 1em;
     }
     .picture--pop{
         display: flex;
         flex-flow: wrap;
         padding:0.1em 0.1em 0.1em 0.1em ;
-        margin:0.5em 0.5em 0.5em 0.5em ;
+        margin-top: 1em;
+
     }
     .picture--pop img{
         display: flex;
         margin: 0.1em 0.1em 0.1em 0.1em;
-        width: 7.5em;
-        height: 7.5em;
-        border-radius: 0.8em 0em 0em 0.8em;
+        width: 35%;
+        height: 8.3em;
         border: none;
         
     }
     .hebergements{
         display: flex;
         flex-flow: column;
-        width: auto;
         background-color: white;
         width: 100%;
     }
     .picture--heberg{
         
-        width: auto;
+        width: 100%;
     }
     .picture--heberg img{
         margin-right: 0.25em;
@@ -579,47 +586,47 @@ footer li{
         
     }
     .Activites{
-        width: auto;
+        width: 82%;
+        margin-top: 0;
+        margin-left: 2em;
+        margin-right: 2em;
     }
-    .Activites h2{
-        margin-left: 1em;
-    }
+    
     .activites--img{
         display: flex;
         flex-direction: column;
-        width: auto;
-        height: auto;
-    }
-    .picture--heberg{
-        margin-left: 1em;
-        margin-right: 1em;
         width: 100%;
-    }
-    .picture--pop,
-    .picture--high,
-    .picture--medium,
-    .picture--small{
-        width: auto;
         height: auto;
-        margin-left: 1em;
-        margin-right: 1em;
-        margin-bottom: 1.5em;
     }
-    .picture--high img,
-    .picture--medium img,
+    .picture--medium--small{
+        width: 100%;
+        
+        margin-top: 1em;
+    }
+    .picture--high{
+        width: 100%;
+        height: 12em;
+        
+    }
+    .picture--high img{
+        height: 9em;
+    }
+
+    .picture--small{
+        width: 100%;
+        height: 12em;
+        margin-bottom: 1em;
+    }
     .picture--small img{
-        width: 99%;
-        height: 8.5em;
+        height: 9em;
     }
-    .picture--heberg img{
-        width: 99%;
-        height: 7em;
+    .picture--medium{
+        width: 100%;
+        height: 12em;
+        margin-bottom: 1em;
     }
-    .hebergements h2{
-        margin-left: 1em;
-    }
-    .hebergements--pix{
-        margin: 0;
+    .picture--medium img{
+        height: 9em;
     }
     footer{
         display: flex;
@@ -630,21 +637,21 @@ footer li{
         margin-left: 0;
     }
 }
-@media screen and (min-width:415px) and (max-width: 768px){
+@media screen and (min-width: 416px) and (max-width: 1024px){
     .bloc_page{
-        margin: auto;
+        margin: 0 100px 0 100px;
     }
     /* SECTION ENTETE */
     header{
         display: flex;
         flex-flow: wrap;
     }
+    .logo-image{
+        margin-left: 1em;
+    }
     .logo-lien{
         order: 0;
         
-    }
-    .logo-image{
-        margin-left: 1em;
     }
     .nav-lien2{
         order: 1;
@@ -685,7 +692,7 @@ footer li{
 /* SECTION RECHERCHES ET FILTRES */
     .barre2rech{
         margin-left: 1em;
-        justify-content: center;
+    
     }
     .barre2rech--Text{
         display: none;
@@ -712,69 +719,97 @@ footer li{
     .hebpop{
         display: flex;
         flex-direction: column-reverse;
-        justify-content: space-between;    
+        width: 100%;    
     }
     .tetpop{
-        display: flex;
-        width: 50%;
+        justify-content: space-between;
+        margin-left: 1em;
+        margin-right: 1em;
     }
     .popular{
         display: flex;
-        flex-flow: column;
-        margin: auto;
-        align-items: center;
-        width: 75%;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
         border-radius: 0em;
-    }
-    .picture--pop{
-        margin-bottom: 1.5em;
-    }
-    .hebergements{
-        width: auto;
-        background-color: #ffff;
-    }
-    .hebergements h2{
-        margin: auto;
-    }
-    .hebergements--pix{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 2em;
-        margin-top: 2em;
-    }
-    .picture--heberg{
-        width: 12em;
-    }
-    .picture--heberg img{
-        width: 11.5em;
-    }
-    .Activites{
-        align-items: center;
-    }
-    .Activites h2{
+        padding-bottom: 2em;
         
     }
-    .activites--img{
+    .popular h2{
+        margin-left: 1em;
+    }
+    .picture--pop{
+        display: flex;
+        flex-flow: wrap;
+        padding:0.1em 0.1em 0.1em 0.1em ;
+        margin-top: 1em;
+
+    }
+    .picture--pop img{
+        display: flex;
+        margin: 0.1em 0.1em 0.1em 0.1em;
+        width: 35%;
+        height: 8.3em;
+        border: none;
+        
+    }
+    .hebergements{
         display: flex;
         flex-flow: column;
-        align-items: center;
-        width: 75%;
+        background-color: white;
+        width: 100%;
+    }
+    .picture--heberg{
+        
+        width: 100%;
+    }
+    .picture--heberg img{
+        margin-right: 0.25em;
+        width: 98%;
+        
+    }
+    .Activites{
+        width: 82%;
+        margin-top: 0;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    
+    .activites--img{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
     }
     .picture--medium--small{
         width: 100%;
+        
+        margin-top: 1em;
     }
-    .picture--small,
-    .picture--medium,
     .picture--high{
         width: 100%;
-        height: 16em;
+        height: 12em;
+        
+    }
+    .picture--high img{
+        height: 9em;
+    }
+
+    .picture--small{
+        width: 100%;
+        height: 12em;
         margin-bottom: 1em;
     }
-    .picture--small img,
-    .picture--medium img,
-    .picture--high img{
-        width: 99%;
-        height: 13em;
+    .picture--small img{
+        height: 9em;
+    }
+    .picture--medium{
+        width: 100%;
+        height: 12em;
+        margin-bottom: 1em;
+    }
+    .picture--medium img{
+        height: 9em;
     }
     footer{
         display: flex;
@@ -782,59 +817,7 @@ footer li{
     }
     footer ul{
         margin-left: 0;
+        margin-right: 3em;
     }
 }
-@media screen and (min-width:769px) and (max-width: 1024px){
-    .bloc_page{
-        margin: auto;
-    }
-    header{
-        margin-left: 1em;
-        margin-right: 1em;
-    }
-    .navigation--titre{
-        text-align: center;
-    }
-    .filtre,
-    .barre2rech{
-        justify-content: center;
-    }
-    .picture--pop{
-        width: 90%;
-    }
-    .popular{
-        width: 35%;
-        margin-right: 1em;
-    }
-    .hebergements{
-        width: 60%;
-    }
-    .Activites h2{
-        text-align: center;
-    }
-    .hebergements,
-    .Activites{
-        margin-left: 1em;
-    }
-    .activites--img{
-        justify-content: space-evenly;
-    }
-    .picture--high{
-        width: 10em;
-    }
-    .picture--medium,
-    .picture--small{
-        width: 12em;
-    }
-    .picture--high img{
-        width: 10em;
-    }
-    .picture--medium img,
-    .picture--small img{
-        width: 12em;
-    }
-    footer ul{
-        margin-left: 5em;
-    }
 
-}
