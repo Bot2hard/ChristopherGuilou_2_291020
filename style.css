@@ -316,6 +316,17 @@ button{
     height: 8.5em;
     
 }
+.picture--pop img{
+    display: flex;
+    object-fit: cover;
+    margin-top : 0.25em;
+    margin-left: 0.25em;
+    margin-bottom: 0.25em;
+    width: 35%;
+    height: 8em;
+    border-radius: 1.25em 0em 0em 1.25em;
+    border: 0.063em solid white ;
+}
 .picture--pop a{
     display: flex;
     text-decoration: none;
@@ -332,17 +343,6 @@ button{
 }
 pop1--icon{
     display: flex;
-}
-.picture--pop img{
-    display: flex;
-    object-fit: cover;
-    margin-top : 0.25em;
-    margin-left: 0.25em;
-    margin-bottom: 0.25em;
-    width: 36%;
-    height: 8em;
-    border-radius: 1.25em 0em 0em 1.25em;
-    border: 0.063em solid white ;
 }
 /*  PARTIE ACTIVITÉS A MARSEILLE */ 
 .Activites{
@@ -567,7 +567,7 @@ footer li{
     .picture--pop img{
         display: flex;
         margin: 0.1em 0.1em 0.1em 0.1em;
-        width: 35%;
+        width: 7em;
         height: 8.3em;
         border: none;
         
