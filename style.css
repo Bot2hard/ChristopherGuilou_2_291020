@@ -273,7 +273,9 @@ button{
 .tetpop{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-left: 3.5em;
+    margin-right: 3.5em;
     
 }
 .popular{
@@ -635,6 +637,7 @@ footer li{
     }
     footer ul{
         margin-left: 0;
+        margin-right: 5em;
     }
 }
 @media screen and (min-width: 416px) and (max-width: 1024px){
